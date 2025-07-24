@@ -1,6 +1,6 @@
 # 🤖 Robot Arm Control Panel - PHP & MySQL Project
 
-This is a web application built with PHP and MySQL to control a robot arm by saving and loading different motor positions. The project was completed as part of a training task for Smart Methods.
+This is a web application built with PHP, MySQL, and JavaScript to control a robot arm by saving and loading different motor positions. The project was completed as part of a training task for Smart Methods.
 
 ---
 
@@ -8,10 +8,12 @@ This is a web application built with PHP and MySQL to control a robot arm by sav
 - Interactive sliders to control each of the 6 motors (0-180° range)
 - Save current motor positions as named "poses"
 - Load saved poses to recall motor positions
-- Delete unwanted poses
+- Remove poses (sets status to inactive instead of deleting)
 - Run current pose to send commands to the robot arm
 - Reset all motors to default 90° position
 - Dynamic table displaying all saved poses
+- Non-destructive "deletion" (sets status=0 for inactive poses inside the database)  
+- Preserves all poses in the database
 
 ---
 
@@ -69,7 +71,7 @@ CREATE TABLE poses (
   motor4 INT,
   motor5 INT,
   motor6 INT,
-  status TINYINT(1) DEFAULT 0
+  status TINYINT(1) DEFAULT 1
 );
 
 ### 4️⃣ Deploy Project Files
@@ -89,8 +91,8 @@ You can now:
 2. Click "Save Pose" to store current positions
 3. View all saved poses in the table
 4. Click "Load" to recall a saved pose
-5. Click "Run" to execute current pose
-6. Click "Remove" to delete unwanted poses
+5. Click "Run" to execute current pose in format: 1,s90,s90,... (for Arduino/robot communication)
+6. Click "Remove" to sets status=0 (hides from UI but keeps in DB).
 
 ---
 
