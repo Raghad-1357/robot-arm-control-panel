@@ -2,6 +2,8 @@
 
 This is a web application built with PHP and MySQL to control a robot arm by saving and loading different motor positions. The project was completed as part of a training task for Smart Methods.
 
+---
+
 ## 🚀 Features
 - Interactive sliders to control each of the 6 motors (0-180° range)
 - Save current motor positions as named "poses"
@@ -11,12 +13,16 @@ This is a web application built with PHP and MySQL to control a robot arm by sav
 - Reset all motors to default 90° position
 - Dynamic table displaying all saved poses
 
+---
+
 ## 🛠 Technologies Used
 - PHP (Backend Logic)
 - MySQL (Database)
 - HTML/CSS (Frontend Structure)
 - JavaScript (Interactive Controls)
 - XAMPP (Apache + MySQL Server)
+
+---
 
 ## 📁 File Structure
 robot-arm-control/
@@ -32,12 +38,7 @@ robot-arm-control/
 ├── style.css           ← Styling
 └── README.md           ← Project documentation
 
-user-form-php-mysql/
-├── index.php ← Main page with form & table
-├── insert.php ← Handles form submission
-├── toggle.php ← Toggles user status
-├── userDB.php ← Connects to the MySQL server
-└── README.md ← Project documentation
+---
 
 ## ⚙️ Setup Instructions
 
@@ -87,6 +88,8 @@ Open in browser:
 4. Click "Load" to recall a saved pose
 5. Click "Run" to execute current pose
 6. Click "Remove" to delete unwanted poses
+
+---
 
 ## 👩‍💻 Author
 Developed by Raghad Alrashidi
