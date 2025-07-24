@@ -26,27 +26,16 @@ This is a web application built with PHP and MySQL to control a robot arm by sav
 
 ## 📁 File Structure
 robot-arm-control/
-
 ├── index.html          ← Main control panel interface
-
 ├── connectToDB.php     ← Database connection handler
-
 ├── get_run_pose.php    ← Retrieves all poses for table
-
 ├── load_pose_values.php ← Loads specific pose values
-
 ├── remove_pose.php     ← Deletes a pose
-
 ├── run_pose.php        ← Executes current pose
-
 ├── save_pose.php       ← Saves new pose
-
 ├── update_status.php   ← Updates pose status
-
 ├── script.js           ← Frontend functionality
-
 ├── style.css           ← Styling
-
 └── README.md           ← Project documentation
 
 ---
