@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Robot Arm Control Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Robot Arm Control Panel</h2>
+
+  <div class="sliders">
+    <div><label>Motor 1:</label> <input type="range" min="0" max="180" value="90" id="motor1" oninput="updateValue(1)"> <span id="value1">90</span></div>
+    <div><label>Motor 2:</label> <input type="range" min="0" max="180" value="90" id="motor2" oninput="updateValue(2)"> <span id="value2">90</span></div>
+    <div><label>Motor 3:</label> <input type="range" min="0" max="180" value="90" id="motor3" oninput="updateValue(3)"> <span id="value3">90</span></div>
+    <div><label>Motor 4:</label> <input type="range" min="0" max="180" value="90" id="motor4" oninput="updateValue(4)"> <span id="value4">90</span></div>
+    <div><label>Motor 5:</label> <input type="range" min="0" max="180" value="90" id="motor5" oninput="updateValue(5)"> <span id="value5">90</span></div>
+    <div><label>Motor 6:</label> <input type="range" min="0" max="180" value="90" id="motor6" oninput="updateValue(6)"> <span id="value6">90</span></div>
+  </div>
+
+  <button onclick="reset()">Reset</button>
+  <button onclick="savePose()">Save Pose</button>
+  <button onclick="runPose()">Run</button>
+
+  <table id="poseTable" border="1">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Motor 1</th><th>Motor 2</th><th>Motor 3</th>
+        <th>Motor 4</th><th>Motor 5</th><th>Motor 6</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- Data will be loaded here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
