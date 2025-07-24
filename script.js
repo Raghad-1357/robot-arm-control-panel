@@ -39,7 +39,6 @@ function runPose() {
   let query = `motor1=${motors[0]}&motor2=${motors[1]}&motor3=${motors[2]}&motor4=${motors[3]}&motor5=${motors[4]}&motor6=${motors[5]}`;
   window.open("get_run_pose.php?" + query, "_blank");
 
-  // تحديث status للصف رقم 1 (يمكن تغييره لاحقًا حسب الحاجة)
   fetch("update_status.php?id=1");
 }
 
