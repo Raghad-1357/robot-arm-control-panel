@@ -79,7 +79,7 @@ C:\xampp\htdocs\robot-arm-control
 ### 5️⃣ Test Database Connection
 Edit connectToDB.php if needed to match your MySQL credentials  
 Open in browser:  
-🔗 [http://localhost/robot-arm-control](http://localhost/robot-arm-control)
+🔗 [http://localhost/robot-arm-control/connectToDB.php](http://localhost/robot-arm-control/connectToDB.php)
 
 ### 6️⃣ Launch Application
 Open in browser:
