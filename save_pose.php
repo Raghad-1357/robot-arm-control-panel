@@ -1,15 +1,12 @@
 <?php
 include 'connectToDB.php';
 
-$m1 = $_POST['motor1'];
-$m2 = $_POST['motor2'];
-$m3 = $_POST['motor3'];
-$m4 = $_POST['motor4'];
-$m5 = $_POST['motor5'];
-$m6 = $_POST['motor6'];
+$data = json_decode(file_get_contents('php://input'), true);
+$pose = $data['pose'];
 
-$sql = "INSERT INTO poses (motor1, motor2, motor3, motor4, motor5, motor6) 
-        VALUES ($m1, $m2, $m3, $m4, $m5, $m6)";
+$sql = "INSERT INTO poses (motor1, motor2, motor3, motor4, motor5, motor6, status) 
+        VALUES ({$pose[0]}, {$pose[1]}, {$pose[2]}, {$pose[3]}, {$pose[4]}, {$pose[5]}, 1)";
 $conn->query($sql);
+echo "Pose saved successfully!";
 $conn->close();
 ?>
