@@ -1,7 +1,7 @@
 <?php
 include 'connectToDB.php';
 
-$result = $conn->query("SELECT * FROM poses");
+$result = $conn->query("SELECT * FROM poses WHERE status = 1");
 
 while($row = $result->fetch_assoc()) {
     echo "<tr>
