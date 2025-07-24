@@ -32,6 +32,13 @@ robot-arm-control/
 ├── style.css           ← Styling
 └── README.md           ← Project documentation
 
+user-form-php-mysql/
+├── index.php ← Main page with form & table
+├── insert.php ← Handles form submission
+├── toggle.php ← Toggles user status
+├── userDB.php ← Connects to the MySQL server
+└── README.md ← Project documentation
+
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Install XAMPP
